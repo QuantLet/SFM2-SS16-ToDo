@@ -8,5 +8,5 @@ Keywords: ADF-Test, nonstationary, dax, ftse100, random-walk
 
 
 Author: Joanna Tomanek, Sophie Burgard
-
+Author[Python]: Justin Hellermann
 
