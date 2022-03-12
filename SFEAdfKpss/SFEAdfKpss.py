@@ -29,7 +29,7 @@ def ADF(df,maxlag,regression):
 def KPSS(df,lags,regression):
 	res=[]
 	for col in df.columns:
-		test_results=kpss(df[col],lags=lags,regression=regression)
+		test_results=kpss(df[col],nlags=lags,regression=regression)
 		pvalue=test_results[1]
 		if pvalue<=0.05:#test decision
 			test_stat=str(test_results[0].round(4))+'*'
