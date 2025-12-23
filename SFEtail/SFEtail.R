@@ -35,7 +35,7 @@ px         = i/n
 # DAX
 model_dax  = lm(log(px[1:m]) ~ log(dax_o[1:m]))
 
-log_k_dax  = model$coefficients[1]
+log_k_dax  = model_dax$coefficients[1]
 a_dax      = - model$coefficients[2]
 
 plot(log(dax_o[1:m]), log(px[1:m]))
@@ -44,7 +44,7 @@ abline(model_dax)
 # FTSE 100
 model_ftse = lm(log(px[1:m]) ~ log(ftse_o[1:m]))
 
-log_k_ftse = model$coefficients[1]
+log_k_ftse = mode_ftse$coefficients[1]
 a_ftse     = - model$coefficients[2]
 
 plot(log(ftse_o[1:m]), log(px[1:m]))
